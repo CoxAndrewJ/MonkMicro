@@ -1,11 +1,14 @@
 ;This is a Script to assist with Monk Micro is Age of Empires 2
 ;Not intended for use in competetive play, as it gives an unfair advantage.
 ;
-;Being able to edit what keys to press coming soon!
+;See ReadMe.md for further details on this script
+;
+;Being able to exit program coming soon
 ;
 ;Specifically, the hotkey is configured to be two inputs at once in order to execute
 ;
 ; Author -- Andrew "TooManyVariables" Cox
+;;;;;;;;;;;;;
 
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 #Warn  ; Enable warnings to assist with detecting common errors.
@@ -22,8 +25,8 @@ if not A_IsAdmin
 monkIconX := 317
 monkIconY := 935
 
-hotKey1 := "A"
-hotKey2 := "D"
+hotKey1 := "A" ; Set your first hotkey to whatever you want
+hotKey2 := "D" ; Set your second hotkey
 
 
 While(1){
