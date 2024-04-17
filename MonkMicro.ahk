@@ -3,6 +3,8 @@
 ;
 ;Being able to edit what keys to press coming soon!
 ;
+;Specifically, the hotkey is configured to be two inputs at once in order to execute
+;
 ; Author -- Andrew "TooManyVariables" Cox
 
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
@@ -20,13 +22,16 @@ if not A_IsAdmin
 monkIconX := 317
 monkIconY := 935
 
+hotKey1 := "A"
+hotKey2 := "D"
+
 
 While(1){
 	
 	; MsgBox, %isActive% ; (didn't work)BlockInput, Off ; Used to prevent a loop from ocurring
 	;MsgBox, % GetKeyState("D", "P")
 
-	if GetKeyState("A", "P") && GetKeyState("D", "P") { ; && !isActive{
+	if GetKeyState(%hotKey1%, "P") && GetKeyState(%hotKey2%, "P") { ; && !isActive{
 		Sleep, 1
 		BlockInput, On 
 	
