@@ -50,9 +50,9 @@ While(1){
 		MouseMove, mouseX, mouseY
 			Sleep, 2
 		
-		;For some reason the script continues to think A and D are pressed down. Weird.
-		Send "{A up}" 
-		Send "{D up}"
+		;For some reason the script continues to think hotKey1 and hotKey2 are pressed down. Weird.
+		Send "{%hotKey1% up}" 
+		Send "{%hotKey2% up}"
 		
 		BlockInput, Off 
 		
