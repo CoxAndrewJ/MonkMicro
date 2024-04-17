@@ -6,7 +6,7 @@ Not intended for use in competetive play, as it gives an unfair advantage.
 
 You will need three things in order for this to work:
 
-1. AutoHotKey (AHK) will need to be installed
+1. AutoHotKey (AHK) will need to be installed. Can be downloaded here : https://www.autohotkey.com/
 2. You will need the (X,Y) coordinates of the Monk icon when you have multiple monks selected, specifically, the left most monk icon
 3. You will need to decide what hotkeys to use
 
