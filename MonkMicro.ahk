@@ -59,6 +59,3 @@ While(1){
 	}
 }
 
-;::Esc::ExitApp ; Exit script with Escape Key
-
-
