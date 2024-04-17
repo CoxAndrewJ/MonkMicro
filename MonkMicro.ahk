@@ -8,7 +8,7 @@
 ;Specifically, the hotkey is configured to be two inputs at once in order to execute
 ;
 ; Author -- Andrew "TooManyVariables" Cox
-;;;;;;;;;;;;;
+;
 
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 #Warn  ; Enable warnings to assist with detecting common errors.
@@ -31,10 +31,8 @@ hotKey2 := "D" ; Set your second hotkey
 
 While(1){
 	
-	; MsgBox, %isActive% ; (didn't work)BlockInput, Off ; Used to prevent a loop from ocurring
-	;MsgBox, % GetKeyState("D", "P")
 
-	if GetKeyState(hotKey1, "P") && GetKeyState(hotKey2, "P") { ; && !isActive{
+	if GetKeyState(hotKey1, "P") && GetKeyState(hotKey2, "P") { ;
 		Sleep, 1
 		BlockInput, On 
 	
@@ -61,6 +59,6 @@ While(1){
 	}
 }
 
-
+;::Esc::ExitApp ; Exit script with Escape Key
 
 
