@@ -21,5 +21,6 @@ To get the coordinates of the monk Icon, you can use the "MouseGetPos" function 
 
 You will need to run the script before your game starts. If not, your hotkeys will not work.
 
+----
 
 My GitHub repository for this is found here: https://github.com/CoxAndrewJ/MonkMicro
