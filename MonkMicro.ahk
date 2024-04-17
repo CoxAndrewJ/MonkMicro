@@ -31,7 +31,7 @@ While(1){
 	; MsgBox, %isActive% ; (didn't work)BlockInput, Off ; Used to prevent a loop from ocurring
 	;MsgBox, % GetKeyState("D", "P")
 
-	if GetKeyState(%hotKey1%, "P") && GetKeyState(%hotKey2%, "P") { ; && !isActive{
+	if GetKeyState(hotKey1, "P") && GetKeyState(hotKey2, "P") { ; && !isActive{
 		Sleep, 1
 		BlockInput, On 
 	
