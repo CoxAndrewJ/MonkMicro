@@ -16,6 +16,9 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #Persistent ; Ensures run scripts indefinitely
 
+;Ensure that clicks are instantaneous
+SetDefaultMouseSpeed, 0
+
 ; BLOCK INPUT WILL NOT WORK WITHOUT RUNNING AS ADMIN ON WINDOWS 10
 if not A_IsAdmin
 	Run *RunAs "%A_ScriptFullPath%"
